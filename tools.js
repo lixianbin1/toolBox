@@ -59,7 +59,7 @@ export function closeWin(){
 export function deepClone(source){
   var targetObj = source.constructor === Array ? [] : {};
   for(let keys in source){
-    if(source.hasOwnProperty(keys)){
+    if(Object.prototype.hasOwnProperty.call(source,keys)){
       if(source[keys] && typeof source[keys] === 'object'){
         targetObj[keys] = source[keys].constructor === Array ? [] : {};
         targetObj[keys] = deepClone(source[keys]);
