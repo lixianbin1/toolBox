@@ -1,6 +1,6 @@
 {
-  "name": "toolbox-li",
-  "version": "0.1.0",
+  "name": "@lixianbin1/toolbox",
+  "version": "0.1.2",
   "description": "A toolbox that belongs to me",
   "main": "tools.js",
   "keywords": [
