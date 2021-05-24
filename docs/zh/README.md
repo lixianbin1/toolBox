@@ -4,7 +4,7 @@ heroImage: /img/logo01.png
 heroText: toolbox
 tagline: 一个用于集成常用函数或不常用的函数插件库
 actionText: 快速上手 →
-actionLink: /guide/
+actionLink: /zh/guide/
 footer: MIT Licensed | Copyright © 2021-present Evan You
 ---
 

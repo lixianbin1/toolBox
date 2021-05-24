@@ -16,8 +16,8 @@ git commit -m 'deploy'
 git push -f git@github.com:lixianbin1/toolBox.git master:gh-pages
 
 # 删除dist文件夹
-# cd ../
-# rm -rf build
+ cd ../
+ rm -rf dist
 
 # 退出
 cd -

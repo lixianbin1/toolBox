@@ -1,7 +1,7 @@
 module.exports = {
   title: '@lixianbin1/toolbox',
   description: '一个用于集成常用函数或不常用的函数插件库',
-  base:'/toolbox/',
+  base:'/toolBox/',
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。

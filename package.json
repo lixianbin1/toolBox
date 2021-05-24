@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "push": "sh deploy.sh",
-    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "repository": {
@@ -23,8 +23,10 @@
     "url": "https://github.com/lixianbin1/toolBox/issues"
   },
   "homepage": "https://github.com/lixianbin1/toolBox#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
-    "uglify-js": "^3.4.10",
     "vuepress": "^1.8.2"
   }
 }
