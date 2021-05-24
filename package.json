@@ -1,7 +1,7 @@
 {
   "name": "@lixianbin1/toolbox",
   "version": "0.1.2",
-  "description": "A toolbox that belongs to me",
+  "description": "A integrate common functions or unusual function plug-in Libraries",
   "main": "tools.js",
   "keywords": [
     "工具",
