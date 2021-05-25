@@ -20,5 +20,7 @@
   "bugs": {
     "url": "https://github.com/lixianbin1/toolBox/issues"
   },
-  "homepage": "https://github.com/lixianbin1/toolBox#readme"
+  "homepage": "https://github.com/lixianbin1/toolBox#readme",
+  "devDependencies": {},
+  "dependencies": {}
 }
