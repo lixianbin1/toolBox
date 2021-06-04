@@ -6,6 +6,10 @@ A integrate common functions or unusual function plug-in Libraries，a toolbox t
 I will integrate some common functions, my own functions, and expect them to become bigger
 我会集成一些常见的函数，自己的函数，期待它的变大
 
+### Document 文档
+
+Document ：https://lixianbin1.github.io/toolBox/
+
 ### installation 安装
 
 ```sh
@@ -24,7 +28,3 @@ let obj={
 }
 let newObj=deepClone(obj)
 ```
-
-### Document 文档
-
-Document ：https://lixianbin1.github.io/toolBox/

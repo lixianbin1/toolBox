@@ -1,6 +1,6 @@
 {
   "name": "@lixianbin1/toolbox",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A integrate common functions or unusual function plug-in Libraries",
   "main": "tools.js",
   "keywords": [
