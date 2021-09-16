@@ -8,7 +8,7 @@
   <a href="https://www.npmjs.com/package/@lixianbin1/toolbox"><img src="https://img.shields.io/npm/l/@lixianbin1/toolbox.svg?sanitize=true" alt="License"></a>
 </p>
 
-[En](./README_zh-cn.md)
+[En](./README.md)
 
 ### 文档
 
