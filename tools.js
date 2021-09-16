@@ -33,8 +33,49 @@ export function toMoney(num){
   return parseFloat(num).toLocaleString();
 }
 
+//时间相关
+export function getTimes(){ //获取时分秒
+  var a= new Date();
+  var h=a.getHours();
+  var f=a.getMinutes();
+  var s=a.getSeconds();
+  h<10?h="0"+h:h=h;
+  f<10?f="0"+f:f=f;
+  s<10?s="0"+s:s=s;
+  return h+":"+f+":"+s
+}
+export function getTime(){ //获取时分
+  var a= new Date();
+  var h=a.getHours();
+  var f=a.getMinutes();
+  h<10?h="0"+h:h=h;
+  f<10?f="0"+f:f=f;
+  return h+":"+f
+}
+export function getDay(type="-"){ //获取年月日
+  var a= new Date();
+  var y=a.getFullYear();
+  var m=a.getMonth()+1;
+  var d=a.getDate();
+  if(type){
+    return y+type+m+type+d+""
+  }
+  return y+"-"+m+"-"+d
+}
+export function getDate(){ //获取年月日时分秒
+  var a= new Date();
+  var y=a.getFullYear();
+  var m=a.getMonth()+1;
+  var d=a.getDate();
+  var h=a.getHours();
+  var f=a.getMinutes();
+  var s=a.getSeconds();
+  h<10?h="0"+h:h=h;
+  f<10?f="0"+f:f=f;
+  s<10?s="0"+s:s=s;
+  return y+"-"+m+"-"+d+" "+h+":"+f+":"+s
+}
 
-// 时间格式：将时间的格式转换为标准格式输出。
 export function newDate(time){
   var a= new Date();
   if(time){a=new Date(time)}
@@ -71,4 +112,15 @@ export function deepClone(source){
   return targetObj;
 }
 
-export default {throttle,prevent,toMoney,newDate,closeWin,deepClone}
+export default {
+  throttle,
+  prevent,
+  toMoney,
+  getTimes,
+  getTime,
+  getDay,
+  getDate,
+  newDate,
+  closeWin,
+  deepClone
+}
