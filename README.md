@@ -3,9 +3,9 @@
 A integrate common functions or unusual function plug-in Libraries，I will integrate some common functions, my own functions, and expect them to become bigger
 
 <p align="center">
-  <a href="https://npmcharts.com/compare/imgzoom-li?minimal=true"><img src="https://img.shields.io/npm/dm/imgzoom-li.svg?sanitize=true" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/imgzoom-li"><img src="https://img.shields.io/npm/v/imgzoom-li.svg?sanitize=true" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/imgzoom-li"><img src="https://img.shields.io/npm/l/imgzoom-li.svg?sanitize=true" alt="License"></a>
+  <a href="https://npmcharts.com/compare/@lixianbin1/toolbox?minimal=true"><img src="https://img.shields.io/npm/dm/@lixianbin1/toolbox.svg?sanitize=true" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/@lixianbin1/toolbox"><img src="https://img.shields.io/npm/v/@lixianbin1/toolbox.svg?sanitize=true" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@lixianbin1/toolbox"><img src="https://img.shields.io/npm/l/@lixianbin1/toolbox.svg?sanitize=true" alt="License"></a>
 </p>
 
 [中文](./README_zh-cn.md)
