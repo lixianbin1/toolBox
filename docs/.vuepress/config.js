@@ -33,7 +33,6 @@ module.exports = {
         algolia: {},
         nav: [
           { text: '指南', link: '/zh/guide/' },
-          { text: 'API', link: '/zh/reference/'},
           { text: 'GitHub', link: 'https://github.com/lixianbin1/toolBox' }, 
         ],
         sidebar:[
@@ -41,8 +40,9 @@ module.exports = {
               title: '介绍',   // 必要的
               collapsable: false, // 折叠
               children: [
-                ['/guide/','toolbox 是什么?'],
-                ['/guide/Started','快速上手'],
+                ['/zh/guide/','toolbox 是什么?'],
+                ['/zh/guide/Started','快速上手'],
+                ['/zh/guide/Reference','方法'],
               ]
             },
         ],
@@ -61,7 +61,6 @@ module.exports = {
         algolia: {},
         nav: [
           { text: 'Guide', link: '/guide/' },
-          { text: 'API', link: '/reference/'},
           { text: 'GitHub', link: 'https://github.com/lixianbin1/toolBox' }, 
         ],
         sidebar:[
@@ -71,6 +70,7 @@ module.exports = {
               children: [
                 ['/guide/','What is imgzoom-li?'],
                 ['/guide/Started','Get Started'],
+                ['/guide/Reference','Method'],
               ]
             },
         ],

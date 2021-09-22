@@ -20,4 +20,3 @@ git push -f git@github.com:lixianbin1/toolBox.git master:gh-pages
  rm -rf dist
 
 # 退出
-cd -

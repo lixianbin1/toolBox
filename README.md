@@ -14,6 +14,8 @@ A integrate common functions or unusual function plug-in Libraries，I will inte
 
 Document ：https://lixianbin1.github.io/toolBox/
 
+[Update log](./log/README.md)
+
 ### installation
 
 ```sh

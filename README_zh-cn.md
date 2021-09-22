@@ -8,11 +8,13 @@
   <a href="https://www.npmjs.com/package/@lixianbin1/toolbox"><img src="https://img.shields.io/npm/l/@lixianbin1/toolbox.svg?sanitize=true" alt="License"></a>
 </p>
 
-[En](./README.md)
+[En](./README.md) 
 
 ### 文档
 
-Document ：https://lixianbin1.github.io/toolBox/
+文档 ：https://lixianbin1.github.io/toolBox/
+
+[更新日志](./log/README_zh-cn.md)
 
 ### 安装
 
