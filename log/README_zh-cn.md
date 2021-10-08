@@ -11,7 +11,7 @@
 ## v0.1.5
  - 添加 `manyYear` `manyMonth` `manyDay` `leapyear`功能函数，manyYear(计算两个时间相隔多少年)，manyMonth(计算两个时间相隔多少月)，manyDay(计算两个时间相隔多少天)，leapyear(计算该时间是否为闰年)
 
-## v0.1.5.1
+## v0.1.6
  - 修复manyDay命名出错的bug
 
 

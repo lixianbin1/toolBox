@@ -11,5 +11,5 @@ Missing
 ## v0.1.5
   - Add `manyYear` `manyMonth` `manyDay` `leapyear` function function, manyYear (calculate how many years are apart between two times), manyMonth (calculate how many months are between two times), manyDay (calculate how many days are between two times), leapyear (calculate whether the time is a leap year)
 
-## v0.1.5.1
+## v0.1.6
   - Fix the bug of wrong naming of manyDay

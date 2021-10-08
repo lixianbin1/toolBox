@@ -46,6 +46,56 @@ import { getDate } from "@lixianbin1/toolbox";
 const newDate = getDate()
 ```
 
+#### manyYear(time1,time2)
+
+time1:可以被时间格式化的数据;time2:可以被时间格式化的数据;
+
+计算两个时间相隔多少年
+
+```js
+import { manyYear } from "@lixianbin1/toolbox";
+...
+const newDate = manyYear('2020/01/01','2022/01/01') // 2
+const newDate2 = manyYear('2020','2024') // 4
+```
+
+#### manyMonth(time1,time2)
+
+time1:可以被时间格式化的数据;time2:可以被时间格式化的数据;
+
+计算两个时间相隔多少月
+
+```js
+import { manyMonth } from "@lixianbin1/toolbox";
+...
+const newDate = manyMonth('2020/01/01','2022/01/01') // 24
+const newDate2 = manyMonth('2020','2024') // 48
+```
+
+#### manyDay(time1,time2)
+
+time1:可以被时间格式化的数据;time2:可以被时间格式化的数据;
+
+计算两个时间相隔多少天
+
+```js
+import { manyDay } from "@lixianbin1/toolbox";
+...
+const newDate = manyDay('2020/01/01','2022/01/01') // 365
+```
+
+#### leapyear(time)
+
+time:可以被时间格式化的数据
+
+计算所属时间是否是闰年
+
+```js
+import { leapyear } from "@lixianbin1/toolbox";
+...
+const newDate = leapyear('2020/01/01') // true
+```
+
 #### newDate(time)
 
 time:可以被时间格式化的数据

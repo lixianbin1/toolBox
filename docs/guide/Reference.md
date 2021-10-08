@@ -46,7 +46,57 @@ import {getDate} from "@lixianbin1/toolbox";
 const newDate = getDate()
 ```
 
-#### New date (time)
+#### manyYear(time1,time2)
+
+time1: data that can be formatted by time; time2: data that can be formatted by time;
+
+Calculate the number of years between two times
+
+```js
+import {manyYear} from "@lixianbin1/toolbox";
+...
+const newDate = manyYear('2020/01/01','2022/01/01') // 2
+const newDate2 = manyYear('2020','2024') // 4
+```
+
+#### manyMonth(time1,time2)
+
+time1: data that can be formatted by time; time2: data that can be formatted by time;
+
+Calculate the number of months between two times
+
+```js
+import {manyMonth} from "@lixianbin1/toolbox";
+...
+const newDate = manyMonth('2020/01/01','2022/01/01') // 24
+const newDate2 = manyMonth('2020','2024') // 48
+```
+
+#### manyDay(time1,time2)
+
+time1: data that can be formatted by time; time2: data that can be formatted by time;
+
+Calculate how many days are between two times
+
+```js
+import {manyDay} from "@lixianbin1/toolbox";
+...
+const newDate = manyDay('2020/01/01','2022/01/01') // 365
+```
+
+#### leapyear(time)
+
+time: data that can be formatted by time
+
+Calculate whether the time is a leap year
+
+```js
+import {leapyear} from "@lixianbin1/toolbox";
+...
+const newDate = leapyear('2020/01/01') // true
+```
+
+#### newDate(time)
 
 time: data that can be formatted by time
 
@@ -63,7 +113,7 @@ const newTime=newDate(oldTime)
 
 ### Deep Clone
 
-#### deepClone (source code)
+#### deepClone(source code)
 
 Source: The complex object that needs to be copied, which can be an object or an array
 
@@ -78,7 +128,7 @@ const newObj=deepClone(oldObj)
 
 ### Anti-shake throttling
 
-#### Prevent (fun, time)
+#### prevent(fun, time)
 
 fun: the function to be executed time: the time interval of anti-shake
 
@@ -86,12 +136,12 @@ The anti-shake function, during the set period of time, if triggered again, the 
 ```js
 Import from "@lixianbin1/toolbox" {block};
 ...
-Prevent(()=>{
+prevent(()=>{
     console.log('Look!')
 },100)
 ```
 
-#### Throttle (fun, time)
+#### throttle(fun, time)
 
 fun: the function to be executed time: the time interval for throttling
 
@@ -99,7 +149,7 @@ The throttling function is only allowed to be executed once within the set valid
 ```js
 Import {throttle} from "@lixianbin1/toolbox";
 ...
-Throttle(()=>{
+throttle(()=>{
     console.log('Look!')
 },100)
 ```
@@ -127,5 +177,5 @@ Close function: close the current browser window
 ```js
 import {closeWin} from "@lixianbin1/toolbox";
 ...
-Close win()
+closeWin()
 ```
