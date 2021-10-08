@@ -119,7 +119,7 @@ export function manyMonth(time1,time2){ //获取两个时间相隔多少月
     console.error('Illegal parameter!')
   }
 }
-export function manyMonth(time1,time2){ //获取两个时间相隔多少天
+export function manyDay(time1,time2){ //获取两个时间相隔多少天
   try{
     if (time1 && time2) {
       let c =
