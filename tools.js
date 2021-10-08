@@ -75,6 +75,84 @@ export function getDate(){ //获取年月日时分秒
   s<10?s="0"+s:s=s;
   return y+"-"+m+"-"+d+" "+h+":"+f+":"+s
 }
+export function manyYear(time1,time2){ //获取两个时间相隔多少年
+  try{
+    if (time1 && time2) {
+      let c =
+        (new Date(time2).getTime() - new Date(time1).getTime()) / 1000 / 60 / 60 / 24;
+      let d=0
+      while(c>1461){
+        c-=1461
+        d+=4
+      }
+      while(c>365){
+        c-=365
+        d+=1
+      }
+      return d
+    }
+  }catch(){
+    console.error('Illegal parameter!')
+  }
+}
+export function manyMonth(time1,time2){ //获取两个时间相隔多少月
+  try{
+    if (time1 && time2) {
+      let c =
+        (new Date(time2).getTime() - new Date(time1).getTime()) / 1000 / 60 / 60 / 24;
+      let d=0
+      while(c>1461){
+        c-=1461
+        d+=48
+      }
+      while(c>365){
+        c-=365
+        d+=12
+      }
+      while(c>30){
+        c-=30
+        d+=1
+      }
+      return d
+    }
+  }catch(){
+    console.error('Illegal parameter!')
+  }
+}
+export function manyMonth(time1,time2){ //获取两个时间相隔多少天
+  try{
+    if (time1 && time2) {
+      let c =
+        (new Date(time2).getTime() - new Date(time1).getTime()) / 1000 / 60 / 60 / 24;
+      return c
+    }
+  }catch(){
+    console.error('Illegal parameter!')
+  }
+}
+
+export function leapyear(year){ //计算是否是闰年
+  if(new String(year).length==4){
+    let a=year%100
+    if(a>0){
+      let b=year%4
+      if(b>0){
+        return false
+      }else{
+        return true
+      }
+    }else{
+      let c=year%400
+      if(c>0){
+        return false
+      }else{
+        return true
+      }
+    }
+  }else{
+    console.error('Illegal parameter!')
+  }
+}
 
 export function newDate(time){
   var a= new Date();
