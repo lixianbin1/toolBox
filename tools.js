@@ -91,7 +91,7 @@ export function manyYear(time1,time2){ //获取两个时间相隔多少年
       }
       return d
     }
-  }catch(){
+  }catch(err){
     console.error('Illegal parameter!')
   }
 }
@@ -115,7 +115,7 @@ export function manyMonth(time1,time2){ //获取两个时间相隔多少月
       }
       return d
     }
-  }catch(){
+  }catch(err){
     console.error('Illegal parameter!')
   }
 }
@@ -126,7 +126,7 @@ export function manyDay(time1,time2){ //获取两个时间相隔多少天
         (new Date(time2).getTime() - new Date(time1).getTime()) / 1000 / 60 / 60 / 24;
       return c
     }
-  }catch(){
+  }catch(err){
     console.error('Illegal parameter!')
   }
 }
