@@ -13,3 +13,6 @@ Missing
 
 ## v0.1.6
   - Fix the bug of wrong naming of manyDay
+
+## v0.1.7
+  - Fix wrong function
