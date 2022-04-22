@@ -34,7 +34,7 @@ export function toMoney(num){
 }
 
 //时间相关
-export function getTimes(){ //获取时分秒
+export function getTimes(type=":"){ //获取时分秒
   var a= new Date();
   var h=a.getHours();
   var f=a.getMinutes();
@@ -42,25 +42,27 @@ export function getTimes(){ //获取时分秒
   h<10?h="0"+h:h=h;
   f<10?f="0"+f:f=f;
   s<10?s="0"+s:s=s;
-  return h+":"+f+":"+s
+  return h+type+f+type+s+""
 }
-export function getTime(){ //获取时分
+export function getTime(type=":"){ //获取时分
   var a= new Date();
   var h=a.getHours();
   var f=a.getMinutes();
   h<10?h="0"+h:h=h;
   f<10?f="0"+f:f=f;
-  return h+":"+f
+  return h+type+f+""
 }
 export function getDay(type="-"){ //获取年月日
   var a= new Date();
   var y=a.getFullYear();
   var m=a.getMonth()+1;
   var d=a.getDate();
+  m<10?m="0"+m:m=m;
+  d<10?d="0"+d:d=d;
   if(type){
     return y+type+m+type+d+""
   }
-  return y+"-"+m+"-"+d
+  return y+type+m+type+d+""
 }
 export function getDate(){ //获取年月日时分秒
   var a= new Date();
@@ -70,6 +72,8 @@ export function getDate(){ //获取年月日时分秒
   var h=a.getHours();
   var f=a.getMinutes();
   var s=a.getSeconds();
+  m<10?m="0"+m:m=m;
+  d<10?d="0"+d:d=d;
   h<10?h="0"+h:h=h;
   f<10?f="0"+f:f=f;
   s<10?s="0"+s:s=s;
