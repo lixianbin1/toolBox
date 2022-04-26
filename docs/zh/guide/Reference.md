@@ -24,7 +24,7 @@ import { getTime } from "@lixianbin1/toolbox";
 const newTime = getTime()
 ```
 
-#### getDay(str)
+#### getDay( str )
 
 str:时间格式用于分隔的特殊字段;默认是 `-`
 

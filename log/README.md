@@ -16,3 +16,6 @@ Missing
 
 ## v0.1.7
   - Fix wrong function
+
+##v0.2.0
+  - Modify the problem that `getDay` and `getDate` functions do not fill in 0s before ten digits;
