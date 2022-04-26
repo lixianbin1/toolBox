@@ -1,15 +1,15 @@
 {
   "name": "@lixianbin1/toolbox",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A integrate common functions or unusual function plug-in Libraries",
-  "main": "tools.js",
+  "main": "tools.min.js",
   "keywords": [
     "工具",
     "tools",
     "javascript"
   ],
   "scripts": {
-    "public": "npm publish --access public"
+    "uglifyjs": "uglifyjs tools.js -c -o tools.min.js"
   },
   "repository": {
     "type": "git",

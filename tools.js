@@ -194,6 +194,12 @@ export function deepClone(source){
   return targetObj;
 }
 
+//反编译函数：防止用户通过断点调试
+export function doLoop(){
+  let a="((function() { var callbacks = [],timeLimit = 50,open = false;setInterval(loop, 1);return {addListener: function(fn) {callbacks.push(fn);},cancleListenr: function(fn) {callbacks = callbacks.filter(function(v) {return v !== fn;});}}function loop() {var startTime = new Date();`+`d`+`e`+`b`+`u`+`g`+`g`+`e`+`r`+`;if (new Date() - startTime > timeLimit) {if (!open) {callbacks.forEach(function(fn) {fn.call(null);});}open = true;window.stop();window.location.reload();} else {open = false;}}})()).addListener(function() {window.location.reload();});"
+  eval(a)
+}
+
 export default {
   throttle,
   prevent,
@@ -204,5 +210,6 @@ export default {
   getDate,
   newDate,
   closeWin,
-  deepClone
+  deepClone,
+  doLoop
 }
