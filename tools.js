@@ -33,6 +33,27 @@ export function toMoney(num){
   return parseFloat(num).toLocaleString();
 }
 
+// 处理时间格式，起始和结束
+export function timestampToTime(timestamp, type=1) {
+  try{
+    var date = new Date(timestamp);
+    var Y = date.getFullYear() + "-";
+    var M =
+      (date.getMonth() + 1 < 10
+        ? "0" + (date.getMonth() + 1)
+        : date.getMonth() + 1) + "-";
+    var D = date.getDate();
+    if (type == 1) {
+      return Y + M + D + " 00:00:00";
+    } else {
+      return Y + M + D + " 23:59:59";
+    }
+  }catch(err){
+    console.error('Illegal parameter!')
+  }
+}
+
+
 //时间相关
 export function getTimes(type=":"){ //获取时分秒
   var a= new Date();
@@ -201,15 +222,16 @@ export function doLoop(){
 }
 
 export default {
-  throttle,
-  prevent,
-  toMoney,
+  closeWin,
+  deepClone,
+  doLoop,
   getTimes,
   getTime,
   getDay,
   getDate,
+  prevent,
+  throttle,
+  timestampToTime,
+  toMoney,
   newDate,
-  closeWin,
-  deepClone,
-  doLoop
 }
