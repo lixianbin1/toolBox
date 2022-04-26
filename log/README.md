@@ -19,3 +19,6 @@ Missing
 
 ##v0.2.0
   - Modify the problem that `getDay` and `getDate` functions do not fill in 0s before ten digits;
+
+##v0.2.1
+  - Modify the problem of self-assignment warning of functional functions; add `doLoop` function function, doLoop (decompile function); modify the problem of `hasOwnProperty` function access error warning;
