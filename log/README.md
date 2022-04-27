@@ -22,3 +22,6 @@ Missing
 
 ##v0.2.1
   - Modify the problem of self-assignment warning of functional functions; add `doLoop` function function, doLoop (decompile function); modify the problem of `hasOwnProperty` function access error warning;
+
+## v0.2.2
+   - Add `timestampToTime` function for processing time start and end;

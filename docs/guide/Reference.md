@@ -46,6 +46,23 @@ import {getDate} from "@lixianbin1/toolbox";
 const newDate = getDate()
 ```
 
+### timestampToTime(time, type)
+
+Handle the time format, giving it the hour, minute, second and end hour, minute, and second of the day;
+
+time: data that can be formatted by time; type: 1: start time 2: end time
+
+````js
+import { timestampToTime } from "@lixianbin1/toolbox";
+
+let time = '2022-04-27'
+
+timestampToTime(time,1) // 2022-04-27 00:00:00
+
+timestampToTime(time,2) // 2022-04-27 23:59:59
+
+````
+
 #### manyYear(time1,time2)
 
 time1: data that can be formatted by time; time2: data that can be formatted by time;

@@ -46,6 +46,23 @@ import { getDate } from "@lixianbin1/toolbox";
 const newDate = getDate()
 ```
 
+### timestampToTime(time,type)
+
+处理时间格式，给予它一天内开始的时分秒和结束的时分秒；
+
+time:可以被时间格式化的数据;  type: 1:开始的时间  2：结束的时间
+
+```js
+import { timestampToTime } from "@lixianbin1/toolbox";
+
+let time ='2022-04-27'
+
+timestampToTime(time,1) // 2022-04-27 00:00:00
+
+timestampToTime(time,2) // 2022-04-27 23:59:59
+
+```
+
 #### manyYear(time1,time2)
 
 time1:可以被时间格式化的数据;time2:可以被时间格式化的数据;
