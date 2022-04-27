@@ -179,3 +179,17 @@ import { closeWin } from "@lixianbin1/toolbox";
 ...
 closeWin()
 ```
+
+### 反编译
+
+#### doLoop
+
+反编译函数，用于防止非法人员通过控制台进行断点调试；对项目进行反编译操作；
+
+** 建议在项目初始的时候执行 **
+
+```js 
+import { doLoop } from "@lixianbin1/toolbox";
+...
+doLoop()
+```

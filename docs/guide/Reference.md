@@ -179,3 +179,17 @@ import {closeWin} from "@lixianbin1/toolbox";
 ...
 closeWin()
 ```
+
+### Decompile
+
+#### doLoop
+
+The decompile function is used to prevent illegal personnel from debugging breakpoints through the console; decompile the project;
+
+** It is recommended to execute at the beginning of the project **
+
+````js
+import { doLoop } from "@lixianbin1/toolbox";
+...
+doLoop()
+````
